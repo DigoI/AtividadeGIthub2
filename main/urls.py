@@ -16,13 +16,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from aluno.models import views
+from aluno.views import rodrigo_view
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('rodrigo/', rodrigo_view),
 ]
 
 
-urlpatterns = [
-    path('rodrigo/', views.rodrigo_view, name='rodrigo'),
-]
+
